@@ -1,0 +1,220 @@
+    <!DOCTYPE html5>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <script src="js/jquery.slide.js"></script>
+    <script src="js/map.js"></script>
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery.slide.css" />
+</head>
+<body>
+<div class="wrap">
+	<!--header-->
+	<div class="header">
+        <input type="checkbox" id="ham">
+        <label class="hamtwo" for="ham">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+       
+       <a class="logo" href="#"><img src="img/logo.png" alt=""></a>
+       <div class="clear"></div>
+
+          <div class="menu" for="ham">
+			<ul class="topbar">
+				<li class="item1"><a href="#">首頁</a></li>
+				<li class="item2"><a href="#">關於我</a></li>
+				<li class="item3"><a href="#">技能</a></li>
+				<li class="item4"><a href="#">作品</a></li>
+				<li class="item5"><a href="#">興趣</a></li>
+				<li class="item6"><a href="#">影片</a></li>
+				<li class="item7"><a href="#">聯絡我</a></li>
+			</ul>
+		  </div>
+
+            <div class="clear"></div>
+            
+		<div class="text">
+			<div class="content">
+		  <h1>只要每天省下買一杯奶茶的錢，十天後就能買十杯奶茶</h1>
+		  
+		  <button type="button">按我</button>
+		</div>
+	    </div>
+
+	    <div class="clear"></div>
+
+	</div>
+    <!--aboutus-->
+    <div class="aboutus">
+        <img  class="profile" src="img/profile.png" alt="">
+    	<h3>關於我</h3>
+    	<p>想戒飲料又戒不掉飲料</p>
+    	<img src="img/sign2.png" alt="">
+    </div>
+    <!--skills-->
+    <div class="skills">
+     <div class="pro">
+    	<h3>技能</h3>
+    	<p>HTML</p>
+		<div class="progressbar">
+			<div id="html"></div>
+		</div>
+    	<p>CSS</p>
+		<div class="progressbar">
+			<div id="css"></div>
+		</div>
+        <p>JQuery</p>
+        <div class="progressbar">
+            <div id="jquery"></div>
+        </div>
+    	<p>JAVASCRIPT</p>
+        <div class="progressbar">
+        	<div id="javascript"></div>
+        </div>
+     </div>
+    </div>
+        <!--number-->
+        <div class="number">
+        	<ul class="nav">
+        		<li>
+        			<img src="img/number.png" alt="">
+        			
+        		</li>
+        		<li>
+        			<img src="img/number2.png" alt="">
+        			
+        		</li>
+        		<li>
+        			<img src="img/number3.png" alt="">
+        			
+        		</li>
+        		<li>
+        			<img src="img/number4.png" alt="">
+        			
+        		</li>
+        	</ul>
+        </div>
+        <!--slide-->
+       <div class="slide">
+      <ul>
+        <li data-bg="img/cofe.jpg"></li>
+        <li data-bg="img/cofe2.jpg"></li>
+        <li data-bg="img/cofe3.jpg"></li>
+        <li data-bg="img/cofe4.jpg"></li>
+        <li data-bg="img/cofe5.jpg"></li>
+        <li data-bg="img/cofe6.jpg"></li>
+        <li data-bg="img/cofe7.jpg"></li>
+        <li data-bg="img/cofe8.jpg"></li>
+      </ul>
+    </div>
+    <script type="text/javascript">
+      $(function() {
+        $('.slide').slide({
+          'slideSpeed': 3000,
+          'isShowArrow': true,
+          'dotsEvent': 'mouseenter',
+          'isLoadAllImgs': true
+        });
+      });
+    </script>
+        <!--video-->
+        <div class="video">
+         
+        	<h3></h3>
+       
+        	<video width="60%" height="auto" controls loop autoplay>
+        	  <source src="img/group.mp4" type="video/mp4">
+        	  <source src="img/group.ogg" type="video/ogg">
+            </video>
+        </div>
+        <!--services-->
+        <div class="services">
+        	<ul class="top">
+        		<li>
+        			<img src="img/service.png" alt="">
+        		</li>
+        		<li>
+        			<img src="img/service2.png" alt="">
+        		</li>
+        		<li>
+        			<img src="img/service3.png" alt="">
+        		</li>
+        		<li>
+        			<img src="img/service4.png" alt="">
+        		</li>
+        	</ul>
+        	<ul class="bottom">
+        		<li>
+        			<img src="img/service5.png" alt="">
+        		</li>
+        		<li>
+        			<img src="img/service6.png" alt="">
+        		</li>
+        		<li>
+        			<img src="img/service7.png" alt="">
+        		</li>
+        		<li>
+        			<img src="img/service8.png" alt="">
+        		</li>
+        	</ul>
+        </div>
+        <!--commend-->
+        <div class="commend">
+        	<p>在非洲，每六十秒，就有一分鐘過去</p>
+        </div>
+        <!--clients-->
+        <div class="clients">
+        	<ul>
+        		<li><img src="img/clients.png" alt=""></li>
+        		<li><img src="img/clients2.png" alt=""></li>
+        		<li><img src="img/clients3.png" alt=""></li>
+        		<li><img src="img/clients4.png" alt=""></li>
+        		<li><img src="img/clients5.png" alt=""></li>
+        	</ul>
+        </div>
+        <!--form-->
+                  
+        <div class="form">
+            <div id="map"></div>
+        	<h3>找我嗎?</h3>
+        	
+        <div class="formname">
+        	<input type="text" placeholder="姓名">
+        	
+        </div>
+        <div class="formemail">
+        	<input type="text" placeholder="信箱">
+        </div>
+        <div class="formcommend">
+        	<textarea placeholder="想說什麼?"></textarea>
+        </div>
+        	<button type="submit">來吧</button>
+       
+        <div class="clear"></div>
+      </div>
+        <!--footer-->
+        <div class="footer">
+        	<ul class="name">
+        		<li class="title"><span>新竹縣竹北市華興街118巷1號</span></li>
+        		<li>w5540141@gmail.com</li>
+        		<li>0911864466</li>
+        	</ul>
+        	<ul class="social">
+        		<li><img src="img/fb.png" alt="" style="width: 20px;height: 20px;"></li>
+        		<li><img src="img/tw.png" alt="" style="width: 20px;height: 20px;"></li>
+        		<li><img src="img/ig.png" alt="" style="width: 20px;height: 20px;"></li>
+        		<li><img src="img/yt.png" alt="" style="width: 20px;height: 20px;"></li>
+        	</ul>
+        	<div class="clear"></div>
+        </div>
+</div>
+
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvNwjZidMOpucYQH5sNW0s72ZLIXiu55w&callback=initMap"></script>
+</body>
+</html>
